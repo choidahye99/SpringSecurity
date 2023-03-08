@@ -1,0 +1,5 @@
+- UserDetails 인터페이스는 스프링 시큐리티에서 사용자를 기술하는 데 이용되는 계약이다.
+- UserDetailsService 인터페이스는 애플리케이션이 사용자 세부 정보를 얻는 방법을 설명하기 위해 스프링 시큐리티의 인증 아키텍처에서 구현해야 하는 계약이다.
+- UserDetailsManager 인터페이스는 UserDetailsService를 확장하고 사용자 생성, 변경, 삭제와 관련된 동작을 추가한다.
+- 스프링 시큐리티는 UserDetailsManager 계약의 여러 구현을 제공한다. 이런 구현에는 InMemoryUserDetailsManager, JdbcUserDetailsManager, LdapUserDetailsManager가 있다.
+- JdbcUserDetailsManager는 JDBC를 직접 이용하므로 애플리케이션이 다른 프레임워크에 고정되지 않는다는 이점이 있다.
